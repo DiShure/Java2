@@ -24,7 +24,17 @@ public class Main {
             System.out.println("Perimeter: " + rect2.getPerimeter());
             System.out.println("\n");
 
+            Stock stock = new Stock("SBER", "PJSC Sberbank");
 
+
+            stock.setPreviousClosingPrice(281.50);
+
+
+            stock.setCurrentPrice(282.87);
+
+
+            System.out.printf("The percentage change in stock price is: %.2f%%\n", stock.getChangePercent());
+            System.out.println("\n");
         }
     }
 
